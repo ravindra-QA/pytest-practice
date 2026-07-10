@@ -148,32 +148,32 @@ def test_user_id(login_response):
 
 
 
-PS C:\Users\GS02494\Desktop\pytest-practice> python -m pytest test_login_api.py -v                         
-======================================================================== test session starts =========================================================================
-platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\GS02494\AppData\Local\Python\pythoncore-3.14-64\python.exe
-cachedir: .pytest_cache
-rootdir: C:\Users\GS02494\Desktop\pytest-practice
-configfile: pytest.ini
-collected 5 items                                                                                                                                                     
+# PS C:\Users\GS02494\Desktop\pytest-practice> python -m pytest test_login_api.py -v                         
+# ======================================================================== test session starts =========================================================================
+# platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\GS02494\AppData\Local\Python\pythoncore-3.14-64\python.exe
+# cachedir: .pytest_cache
+# rootdir: C:\Users\GS02494\Desktop\pytest-practice
+# configfile: pytest.ini
+# collected 5 items                                                                                                                                                     
 
-test_login_api.py::test_status_code PASSED                                                                                                                      [ 20%]
-test_login_api.py::test_message PASSED                                                                                                                          [ 40%]
-test_login_api.py::test_username PASSED                                                                                                                         [ 60%]
-test_login_api.py::test_user_role PASSED                                                                                                                        [ 80%]
-test_login_api.py::test_user_id PASSED                                                                                                                          [100%]
+# test_login_api.py::test_status_code PASSED                                                                                                                      [ 20%]
+# test_login_api.py::test_message PASSED                                                                                                                          [ 40%]
+# test_login_api.py::test_username PASSED                                                                                                                         [ 60%]
+# test_login_api.py::test_user_role PASSED                                                                                                                        [ 80%]
+# test_login_api.py::test_user_id PASSED                                                                                                                          [100%]
 
-========================================================================= 5 passed in 0.04s ==========================================================================
-PS C:\Users\GS02494\Desktop\pytest-practice> git add test_login_api.py                                     
-PS C:\Users\GS02494\Desktop\pytest-practice> git commit -m "Added login API test with fixtures and markers"
-[main 9aae126] Added login API test with fixtures and markers
- 1 file changed, 114 insertions(+), 31 deletions(-)
-PS C:\Users\GS02494\Desktop\pytest-practice> git push                                                      
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 1.45 KiB | 740.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/ravindra-QA/pytest-practice.git
-   313e1c3..9aae126  main -> main
+# ========================================================================= 5 passed in 0.04s ==========================================================================
+# PS C:\Users\GS02494\Desktop\pytest-practice> git add test_login_api.py                                     
+# PS C:\Users\GS02494\Desktop\pytest-practice> git commit -m "Added login API test with fixtures and markers"
+# [main 9aae126] Added login API test with fixtures and markers
+#  1 file changed, 114 insertions(+), 31 deletions(-)
+# PS C:\Users\GS02494\Desktop\pytest-practice> git push                                                      
+# Enumerating objects: 5, done.
+# Counting objects: 100% (5/5), done.
+# Delta compression using up to 4 threads
+# Compressing objects: 100% (3/3), done.
+# Writing objects: 100% (3/3), 1.45 KiB | 740.00 KiB/s, done.
+# Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+# remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+# To https://github.com/ravindra-QA/pytest-practice.git
+#    313e1c3..9aae126  main -> main

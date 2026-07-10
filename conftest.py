@@ -24,9 +24,7 @@ def api_config():
 def test_environments():
     return ["Production", "Staging", "Test"]
 
-# Open existing conftest.py in your folderAlready exists!
 
-# Add a new fixture called base_config returning: {"base_url": "https://stumbleguys.com", "timeout": 30, "environment": "Staging"}@pytest.fixture
 @pytest.fixture
 def base_config():
     return {
@@ -36,7 +34,6 @@ def base_config():
     }
 
 
-# Add another fixture called test_user returning: {"username": "Allison", "password": "test1234", "role": "Tester"}Same as above
 @pytest.fixture
 def test_user():
     return {
@@ -44,3 +41,14 @@ def test_user():
         "password": "test1234",
         "role": "Tester"
     }
+
+@pytest.fixture
+def browser_session():
+    print("🌐 Browser opened!")
+    data = {
+        "browser": "Chrome", 
+        "is_open": True, 
+        "url": ""
+    }
+    yield data
+    print("🔴 Browser closed!")
