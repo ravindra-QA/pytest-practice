@@ -1,3 +1,5 @@
+# test_browser_session.py
+
 import pytest
 
 @pytest.mark.smoke
